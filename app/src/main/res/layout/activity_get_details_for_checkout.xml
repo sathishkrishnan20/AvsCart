@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.avs.online.avscart.GetDetailsForCheckout">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/custom_toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary" />
+    <EditText
+        android:id="@+id/amount_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:hint="1"
+        android:enabled="false"
+        android:imeOptions="actionNext"
+        android:maxLines="1"
+        android:textSize="16sp" />
+
+
+    <EditText
+        android:id="@+id/email_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:hint="Enter email"
+        android:imeOptions="actionNext"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:nextFocusDown="@+id/card_name_et"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/mobile_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:hint="Enter mobile"
+        android:imeOptions="actionDone"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:maxLines="1"
+        android:textSize="16sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingRight="10dp">
+
+        <Button
+            android:id="@+id/pay_now_button"
+            style="@style/ButtonStyle"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="Pay Now" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/logout_button"
+        style="@style/ButtonStyle"
+        android:layout_margin="10dp"
+        android:onClick="onClick"
+        android:text="Logout" />
+
+
+</LinearLayout>
